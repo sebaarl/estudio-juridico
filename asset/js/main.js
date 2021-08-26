@@ -77,3 +77,8 @@ scrollReveal.reveal('.contact__form',{
     origin: 'left',
     interval: 200,
 })
+
+scrollReveal.reveal('.welcome__data',{
+    origin: 'left',
+    interval: 200,
+})
