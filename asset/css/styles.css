@@ -220,7 +220,7 @@ iframe {
 
 .footer__rights {
     text-align: center;
-    color: #979191;
+    color: #8a8a8a;
     font-size: var(--small-font-size);
 }
 
@@ -230,7 +230,7 @@ iframe {
 
 .footer__rights a {
     text-align: center;
-    color: #979191;
+    color: #8a8a8a;
     font-size: var(--small-font-size);
 }
 
@@ -298,14 +298,37 @@ iframe {
 }
 
 .home__data-subtitle {
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .home__data p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.welcome .section__title {
+    margin-top: 10px;
+}
+
+.welcome__container {
+    margin: 0 auto;
+}
+
+.welcome__data--img {
+    width: 100%;
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
     margin-top: 20px;
-    font-size: 1.2em;
+}
+
+.welcome__data--img img {
+    width: 300px;
+    max-width: 500px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 /* contacto.html */
@@ -574,6 +597,37 @@ iframe {
     .header_nav .nav__menu .nav__links:hover:after {
         width: 100%;
         background: var(--text-color);
+    }
+
+    .home__data {
+        padding: 1.4rem;
+    }
+
+    .welcome__item {
+        width: 100%;
+    }
+
+    .welcome__item .section__title {
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    .welcome__data {
+        display: grid;  
+        grid-template-columns: 50% 50%;
+    }
+    
+    .welcome__data--img {
+        width: 100%;
+        grid-column: 2;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+    }
+
+    .welcome__data--img img {
+        width: 400px;
     }
     
     .practice__item {
