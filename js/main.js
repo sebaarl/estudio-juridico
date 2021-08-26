@@ -77,18 +77,3 @@ scrollReveal.reveal('.contact__form',{
     origin: 'left',
     interval: 200,
 })
-
-// //FORMULARIO
-
-// const $form = document.querySelector("#form")
-// const $button = document.querySelector("#trucazo")
-
-// $form.addEventListener("submit", handleSubmit)
-
-// function handleSubmit(event) {
-//     event.preventDefault();
-//     const form = new FormData(this)
-
-//     $button.setAttribute('href', `mailto:rsebadb@gmail.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('subject')}${form.get('message')}`)
-//     $button.click()
-// }
