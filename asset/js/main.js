@@ -1,3 +1,16 @@
+//JQUERY
+$(document).ready(function() {
+        $(window).scroll(function() {
+            if($(window).width() >= 768) {
+                if($(this).scrollTop() > 40) {
+                    $('.header_nav').css('height', '3.5rem')
+                } else {
+                    $('.header_nav').css('height', '5.0rem')
+                }
+            }
+        })
+})
+
 // MOSTRAR MENÚ
 const navMenu = document.getElementById('nav-menu') 
 const navToggleMenu = document.getElementById('nav-toggle')
@@ -26,8 +39,14 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 //SCROLLTOP
 function scrollTop(){
     const scrollTop = document.getElementById('scroll-top');
-    if (this.scrollY >= 200) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+
+    if (this.scrollY >= 200) {
+        scrollTop.classList.add('show-scroll')
+    } else {
+        scrollTop.classList.remove('show-scroll')        
+    }
 }
+
 window.addEventListener('scroll', scrollTop)
 
 //ACTIVE LINK
@@ -82,3 +101,4 @@ scrollReveal.reveal('.welcome__data',{
     origin: 'left',
     interval: 200,
 })
+
