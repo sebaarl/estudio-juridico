@@ -11,7 +11,6 @@ $(document).ready(function() {
         })
 })
 
-// MOSTRAR MENÚ
 const navMenu = document.getElementById('nav-menu') 
 const navToggleMenu = document.getElementById('nav-toggle')
 const navCloseMenu = document.getElementById('nav-close')
@@ -36,7 +35,6 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-//SCROLLTOP
 function scrollTop(){
     const scrollTop = document.getElementById('scroll-top');
 
@@ -49,7 +47,6 @@ function scrollTop(){
 
 window.addEventListener('scroll', scrollTop)
 
-//ACTIVE LINK
 const currentLink = location.href
 const menuLink = document.querySelectorAll('.nav__links')
 const menuLength = menuLink.length
@@ -59,46 +56,3 @@ for (let i = 0; i < menuLength; i++) {
         menuLink[i].classList.add('active')
     }
 }
-
-//SCROLLREVEAL
-const scrollReveal = ScrollReveal({
-    distance: '60px', 
-    duration: 2800,
-    //reset: true,
-}) 
-
-scrollReveal.reveal('.home__data',{
-    origin: 'top',
-    interval: 200,
-})
-
-scrollReveal.reveal('.section__title',{
-    origin: 'left',
-    interval: 200,
-})
-
-scrollReveal.reveal('.practice__data',{
-    origin: 'left',
-    interval: 200,
-})
-
-scrollReveal.reveal('.team__data',{
-    origin: 'left',
-    interval: 200,
-})
-
-scrollReveal.reveal('.contact__data',{
-    origin: 'left',
-    interval: 200,
-})
-
-scrollReveal.reveal('.contact__form',{
-    origin: 'left',
-    interval: 200,
-})
-
-scrollReveal.reveal('.welcome__data',{
-    origin: 'left',
-    interval: 200,
-})
-
